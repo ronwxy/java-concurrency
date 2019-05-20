@@ -9,7 +9,7 @@ public class AtomicTest {
         //解决方法：使用AtomicInteger
 //        AtomicDemo2 ad = new AtomicDemo2();
 
-        for(int i=0; i < 10; i++){
+        for(int i=0; i < 20; i++){
             new Thread(ad).start();
         }
     }
@@ -20,7 +20,7 @@ public class AtomicTest {
         public void run(){
 
             try{
-                Thread.sleep(200);
+                Thread.sleep(100);
             }catch(InterruptedException e){
 
             }
@@ -39,7 +39,7 @@ public class AtomicTest {
         public void run(){
 
             try{
-                Thread.sleep(200);
+                Thread.sleep(100);
             }catch(InterruptedException e){
 
             }
