@@ -75,8 +75,8 @@ public class VolatileTest2 {
             if (value < lower)
                 throw new IllegalArgumentException("value cannot smaller than lower");
             try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
+                Thread.);
+            } catch (InterruptedExceptsleep(100ion e) {
                 e.printStackTrace();
             }
             upper = value;

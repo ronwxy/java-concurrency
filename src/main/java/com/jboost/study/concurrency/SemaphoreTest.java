@@ -16,8 +16,8 @@ public class SemaphoreTest {
         // 8个人争夺资源
         for (int i = 0; i < 8; i++) {
             final String name = "人员" + i;
-            new Thread(() -> {
-                    try {
+                        new Thread(() -> {
+                            try {
                         SEMAPHORE.acquire();
                         System.out.println(name + "占用一个柜台处理...");
                         Thread.sleep(2000);
